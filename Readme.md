@@ -1,7 +1,6 @@
 # 🐾 Peddy - Pet Adoption Platform
 
-## Peddy Live link
-https://peddy-adoption-juwelr.netlify.app/
+## Peddy Live link   githttps://peddy-adoption-juwelr.netlify.app/
 
 **Welcome to Peddy Adoption!**  
 This project is designed to provide a fully dynamic experience for pet adoption, built on an API-driven architecture. With **Peddy Adoption**, users can easily find and adopt their loving pets. The platform offers a user-friendly interface, loaded with key features for an intuitive pet search and adoption process.
