@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy || Adoption Start Here</title>
+    <!-- Google Font Family  font-family: "Lato", sans-serif;-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awsome -->
+    <script
+      src="https://kit.fontawesome.com/f56a8c511a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Taiwind and daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0E7A81",
+            },
+            fontFamily: {
+              lato: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body">
+    <header class="w-11/12 mx-auto font-lato space-y-14">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li>Home</li>
+              <li>Shop</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div
+            class="flex justify-center items-center gap-4 font-bold text-3xl"
+          >
+            <img src="./images/logo.webp" alt="" />
+            <p>Peddy</p>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <p
+            class="border-2 border-primary/10 h-10 w-10 flex justify-center items-center rounded-full p-6"
+          >
+            <i class="fa-regular fa-user"></i>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main section Start -->
+    <main class="w-11/12 mx-auto font-lato space-y-14 lg:mt-12 mt8 ">
+      <section
+        class="flex flex-col items-center gap-7 font-bold md:w-3/6 mx-auto text-center"
+      >
+        <p class="text-lg text-[#13131399]/60">Bringing Families Together ❤️‍🔥</p>
+        <h2 class="lg:text-7xl md:text-5xl text-4xl font-extrabold">
+          Your Path to Adoption Starts Here
+        </h2>
+        <p>
+          Peddy Adoption connects pets in need with loving families. Find your perfect companion from our easy-to-browse listings of pets looking for a forever home. Adopt today and give a pet a second chance at happiness!
+        </p>
+        <a href="#adoptSection" class="btn bg-primary hover:bg-white hover:text-primary transition duration-300 font-bold text-xl text-white">View More</a>
+        <div>
+          <img src="./images/pet.webp" alt="" />
+        </div>
+      </section>
+
+      <!-- Dynamic Section  -->
+      <section id="adoptSection">
+        <div class="sectionContent text-center w-5/6 lg:w-1/2 mx-auto">
+          <h1 class="font-extrabold md:text-4xl text-3xl">
+            Adopt Your Best Friend
+          </h1>
+          <p class="mt-6 mb-12 text-[#131313B3]/70">
+            At Peddy Adoption, find your perfect pet match with ease. Browse our listings of pets ready for a loving home and give them a second chance at happiness. Adopt your new best friend today!
+          </p>
+        </div>
+        <!-- Dynamic Button section -->
+         <div id="spinner" class="flex justify-center items-center">
+        </div>
+           <div
+             id="categoryBtnContainer"
+             class="grid grid-cols-2 lg:grid-cols-4 gap-4 justify-between"
+           ></div>
+
+        <!-- Sort section -->
+        <div class="flex justify-between items-center my-12">
+          <p class="font-extrabold text-2xl">Best Deal For you</p>
+          <button id="sortBtn"
+            class="btn bg-primary hover:bg-white hover:text-primary transition duration-300 font-bold text-xl text-white"
+          >
+            Sort by Price
+          </button>
+        </div>
+
+        <!-- Dynamic Pet Show -->
+         
+        <div id="spinner2" class="flex justify-center items-center ">
+        </div>
+        <section
+          class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 justify-end items-start"
+        >
+        
+          <div
+            id="petDetails"
+          >
+            <!-- Card will place Here -->
+          </div>
+          <!-- Liked Pet's Thumbnails -->
+          <div id="likedPet"></div>
+        </section>
+      </section>
+    </main>
+    <footer class="bg-black  text-white/90 mt-8 py-14 justify-items-center">
+      <div
+        class="w-11/12 mx-auto flex flex-col md:flex-row gap-10 justify-between"
+      >
+        <div>
+          <div class="flex items-center gap-4 font-bold text-3xl mb-6">
+            <img src="./images/logo.webp" alt="" />
+            <p>Peddy</p>
+          </div>
+          <p>
+            Location: av. Washington 165, <br />NY CA 54003 <br />
+            Phone: +31 85 964 47 25 <br />
+            Email: info@yourdomain.com <br />Openings hours: 9.00 AM - 5.00 PM
+          </p>
+          <div class="text-4xl space-x-3 mt-2">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <ul class="space-y-1 text-gray-400">
+          <h1 class="font-bold text-lg text-white/90">Useful Links</h1>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Animals</li>
+          <li>Foundation</li>
+          <li>Contact</li>
+        </ul>
+        <div class="flex flex-col gap-3">
+          <h1 class="font-bold text-lg text-white/90">Useful Links</h1>
+          <input
+            class="bg-white/20 outline-none p-3 rounded-xl"
+            placeholder="Enter your email"
+            type="email"
+          />
+          <input
+            class="btn border-none bg-primary hover:bg-white hover:text-primary transition duration-300 font-bold text-xl text-white"
+            type="button"
+            value="Subscribe"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <dialog id="my_modal_3" class="modal">
+      <div id="petDetailsContainer" class="modal-box"></div>
+    </dialog>
+
+    <dialog id="my_modal_2" class="modal">
+      <div class="modal-box flex flex-col items-center">
+        <h3 class="font-extrabold text-5xl text-primary">
+          <i class="fa-regular fa-handshake"></i>
+        </h3>
+        <h3 class="font-extrabold text-4xl text-primary">Congrats!</h3>
+        <p class="py-4 text-xl font-bold">
+          Adoption Process stated for your Pet.
+        </p>
+        <h3 id="modalCountdown" class="font-extrabold text-6xl text-primary">
+          3
+        </h3>
+        <div class="modal-action"></div>
+      </div>
+    </dialog>
+
+    <script></script>
+    <script src="./scripts/loadApi.js"></script>
+    <script src="./scripts/displayApi.js"></script>
+    <script src="./scripts/othersFn.js"></script>
+  </body>
+</html>
