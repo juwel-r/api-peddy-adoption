@@ -5,7 +5,7 @@
 **Welcome to Peddy Adoption!**  
 This project is designed to provide a fully dynamic experience for pet adoption, built on an API-driven architecture. With **Peddy Adoption**, users can easily find and adopt their loving pets. The platform offers a user-friendly interface, loaded with key features for an intuitive pet search and adoption process.
 
-## Key Features of the Peddy Adoption Project
+### Key Features of the Peddy Adoption Project
 
 1. **Load All Pets by Default**  
    Upon loading the platform, all pets are displayed in the main section by default for easy browsing.
